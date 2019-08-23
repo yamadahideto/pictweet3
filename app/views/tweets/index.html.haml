@@ -1,0 +1,4 @@
+.contents.row
+  - @tweet.each do |tweet|
+    = render partial: "tweet", locals: { tweet: tweet }
+  = paginate(@tweet)
